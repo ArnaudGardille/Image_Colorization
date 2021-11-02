@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+landscape_images/
 build/
 develop-eggs/
 dist/
