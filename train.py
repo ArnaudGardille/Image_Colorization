@@ -55,7 +55,7 @@ class Trainer:
         self.nbVal = nbEx - self.nbTrain
         train_dataset, val_dataset = torch.utils.data.random_split(self.dataset, [self.nbTrain,  self.nbVal])
 
-        self.train_dataloader = DataLoader(train_dataset, batch_size=32,
+        self.train_dataloader = DataLoader(train_dataset, batch_size=64,
                         shuffle=True)
 
         self.val_dataloader = DataLoader(val_dataset, batch_size=8,
@@ -63,14 +63,15 @@ class Trainer:
         # Model
         self.model = Net()
         # Loss function to use
-        self.criterion = mse_loss #l1_loss
+        self.criterion = l1_loss # mse_loss #
         self.optimizer = Adam(self.model.parameters(),  lr=1e-2)
         
         
         
         pass
         # Define hparams here or load them from a config file
-    def train(self, nbEpoch = 100, printIm=False):
+        
+    def train(self, nbEpoch = 1000, printIm=False):
         print("starting the training")
 
 
