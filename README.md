@@ -16,6 +16,13 @@ For systems without a dedicated gpu, you may use a CPU version of pytorch.
 
 Dataset: https://drive.google.com/file/d/15jprd8VTdtIQeEtQj6wbRx6seM8j0Rx5/view?usp=sharing
 
+## Code structure 
+
+- colorize_data.py : Load and preprocess the data
+- basic_model.py   : The neural network 
+- train.py         : The trainer
+- predict_color.py : Allows to use a trained model from the terminal
+
 ## Explanations
 
 The objective of this challenge is to colour images given grayscale input image. The dataset contains 4282 images in JPEG format. 
