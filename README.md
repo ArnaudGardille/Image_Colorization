@@ -3,11 +3,11 @@ The task of colorising greyscale images previously needed significant user input
 
 ## Example
 
-https://github.com/ArnaudGardille/Image_Colorization/blob/main/805.jpg?raw=true![image](https://user-images.githubusercontent.com/90635018/141796648-725ccd65-7dde-48eb-b2fa-43cfe781087f.png)
+![alt text](https://user-images.githubusercontent.com/90635018/141796648-725ccd65-7dde-48eb-b2fa-43cfe781087f.png)
 
-https://github.com/ArnaudGardille/Image_Colorization/blob/main/805_grey.jpg?raw=true![image](https://user-images.githubusercontent.com/90635018/141796684-3f09b29b-2a5a-413e-a340-c9787a8a0130.png)
+![alt text](https://user-images.githubusercontent.com/90635018/141796684-3f09b29b-2a5a-413e-a340-c9787a8a0130.png)
 
-https://github.com/ArnaudGardille/Image_Colorization/blob/main/Coloured_805_grey.jpg?raw=true![image](https://user-images.githubusercontent.com/90635018/141796723-f31c943c-7fc8-4005-a73a-0cdd62303f14.png)
+![alt text](https://user-images.githubusercontent.com/90635018/141796723-f31c943c-7fc8-4005-a73a-0cdd62303f14.png)
 
 
 ## Setup Instructions
@@ -17,6 +17,8 @@ Create a conda environment with pytorch, cuda.
 
 For systems without a dedicated gpu, you may use a CPU version of pytorch.
 `$ conda install pytorch torchvision torchaudio cpuonly -c pytorch scikit-image matplotlib pillow pathlib tqdm`
+
+Dataset: https://drive.google.com/file/d/15jprd8VTdtIQeEtQj6wbRx6seM8j0Rx5/view?usp=sharing
 
 ## Explanations
 
