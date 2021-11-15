@@ -1,6 +1,9 @@
 # Image Colorization
 The task of colorising greyscale images previously needed significant user inputs, but can nowadays be automated thanks to the recent improvement of deep learning.
 
+![image](https://user-images.githubusercontent.com/90635018/141793231-86618ae2-e885-4583-a644-d4aff83068e2.png)
+
+
 The objective of this challenge is to colour images given grayscale input image. The dataset contains 4282 images in JPEG format. 
 My first approach was simply to work in the RGB colour space. It worked, and the learning process was quite fast. However, the loss of information when passing through smaller layers led to blurred images. 
 After some research, I found an article with an interesting approach consisting in working in the LAB colour space. It consist in separating the luminance L from the colour components A and B, and is intended to be perceptually uniform. Then, our model only has to learn how to produce those A and B components, and adding them to the greyscale image. Even if the colourisation is still not so precise, the final image now looks sharp enough. 
